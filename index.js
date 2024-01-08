@@ -17,7 +17,7 @@ app.use(express.static('public'))
 //setting view engine
 
 app.set('view engine','ejs')
-app.set('view')
+app.set('views')
 
 app.use(express.urlencoded({extended:false}))
 
