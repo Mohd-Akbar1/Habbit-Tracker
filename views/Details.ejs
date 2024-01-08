@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hbbit detail</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- main detail page  -->
+    <div class="main">
+        <nav class="navbar ">
+            <div class="container-fluid">
+                <h2>Habbit Tracker</h2>
+                <a href="/"><img class="picture" src="https://habitdaily.app/assets/images/habit_app_icon.png"
+                        alt="habbit-pic-image"></a>
+            </div>
+        </nav>
+
+
+        <!-- each habbit detail container -->
+        <div class="container  containerT">
+
+            <div class="container HabitName">
+                <p>Habbit detail</p>
+                <h1><b>
+                        <%= habitDetail.name %>
+                    </b></h1>
+
+                <p><b>Created At:</b>
+                    <%= habitDetail.createdAt %>
+                </p>
+            </div>
+
+
+            <!-- table for previous 7 days details -->
+
+            <div class="container tabledetails">
+                <table class="table table-hover">
+                    <thead class="table-success">
+                        <tr>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>UpdateStatus</th>
+                        </tr>
+                    </thead>
+                    <% for(let day=0;day<track.length;day++){ %>
+                        <tr>
+                            <td>
+                                <%= track[day].date %>
+                            </td>
+                            <td class="tableStatus">
+                                <%= track[day].status %>
+                            </td>
+                            <th>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <%= track[day].status %>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item "
+                                            href="/changestatus/?id=<%= habitDetail.id%>&status=Complete&date=<%=track[day].date%>">Completed</a>
+                                        <a class="dropdown-item "
+                                            href="/changestatus/?id=<%= habitDetail.id%>&status=Incomplete&date=<%=track[day].date%>">Incomplete</a>
+                                        <a class="dropdown-item"
+                                            href="/changestatus/?id=<%= habitDetail.id%>&status=None&date=<%=track[day].date%>">None</a>
+                                    </div>
+
+                                </div>
+                            </th>
+
+                        </tr>
+                        <% } %>
+
+                </table>
+
+            </div>
+        </div>
+        <!-- button to redirect back on home page -->
+        <a href="/" class="btn btn-primary back">back</a>
+    </div>
+
+   
+
+
+    <!-- External javascript -->
+    <script src="/script.js"></script>
+
+
+    <!-- bootstrap javascript  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+        <!-- External javascript -->
+
+    
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habbit</title>
+     <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+</head>
+<body>
+  <!-- main home page -->
+
+  <div class="main">
+    <nav class="navbar ">
+        <div class="container-fluid">
+          <h2>Habbit Tracker</h2>
+          <img class="picture" src="https://habitdaily.app/assets/images/habit_app_icon.png" alt="habbit-pic-image">
+          </div>
+      </nav>
+
+
+
+      <!-- input box to enter habbit name -->
+
+      <div class="container">
+        
+            <form class="d-flex" role="search" method="post" action="/addHabbit" class="search-box" >
+                <input class="form-control me-2 fo" name="name" type="search" placeholder="Enter here.." aria-label="Search" autofocus required>
+                
+                <button class="btn btn-primary" type="submit">Add</button>
+              </form>
+        
+      </div>
+
+
+
+<!-- habbit name list on main page -->
+      <Div class="box">
+        <!-- if  habbit list is empty  -->
+        <% if (users.length===0) { %>
+         <p style="text-align: center;"><strong>Empty List</strong></p>
+        <% } else{%>
+          <% users.forEach(user => { %>
+           <div class=" habbits">
+            <a  href="/details/?id=<%=user._id%>" ><img class="info-img " src="../information-button.png" alt="info"></a>
+            <h5><strong><%= user.name %></strong></h5>
+            <a href="/delete/?id=<%=user._id%>" class="btn btn-danger">Delete</a>
+
+
+          </div>
+          <% }) %>
+
+
+
+
+          <% } %>
+      </Div>
+    </div>
+    
+</body>
+</html>

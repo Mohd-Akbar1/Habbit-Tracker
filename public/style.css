@@ -1,0 +1,132 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Mulish:wght@300&family=Open+Sans&family=Poppins:wght@300&family=Roboto&family=Roboto+Condensed:wght@300;400&display=swap');
+
+*{
+    font-family:Mulish ;
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.container input{
+    width: 600px;
+}
+.box{
+    width: 800px;
+    
+    transform: translate(50%);
+    }
+.habbits{
+    display: flex;
+    box-shadow: 1px 3px 5px ;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: white;
+   
+}
+.habbits h5{
+    width: 80%;
+    padding-left: 20px;
+    margin: auto 2px;
+}
+.habbits .btn{
+    margin-left:  40px;
+}
+.picture{
+    width: 60px;
+}
+
+.container-fluid h2{
+    width: 400px;
+    font-weight: bold;
+   
+   text-align: center;
+    
+}
+.main{
+    /* background-color: #eafbff; */
+    background: url('https://w0.peakpx.com/wallpaper/557/521/HD-wallpaper-whatsapp-v-background-doodle-pattern-patterns-whatsapp.jpg');
+    min-height: 100vh;
+}
+.info-img{
+    width: 15px;
+
+   padding-top: 10px ;
+}
+
+.navbar{
+
+background-color: #161A30;
+color: white;
+display: flex;
+justify-content:flex-start;
+align-items: center;
+
+}
+
+.container li{
+    list-style: none;
+    display: inline;
+   
+    margin-bottom: 5px;
+
+}
+.container{
+    width: 50vw;
+    margin: 50px auto;
+   display: flex;
+   flex-direction: row;
+   
+    
+}
+
+
+/* ....... */
+.containerT{
+
+    height: 460px;
+    margin: 50px auto;
+   
+   background-color: white;
+   border-radius: 4px;
+   box-shadow: 0 4px 5px ;
+   background-color:antiquewhite;
+   
+    
+}
+.HabitName{
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    box-shadow: 0 4px 5px ;
+    background-color: white;
+    border-radius: 6px;
+    min-height: 80%;
+}
+.table{
+    text-align: center;
+   
+    height: x;
+    
+}
+.HabitName p{
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin: 15px 0px;
+    background-color: rgba(0,0,0,0.1);
+}
+.HabitName h1{
+    color: blue;
+    font-family: ;
+}
+.back{
+    position: absolute;
+    right: 108px;
+}
