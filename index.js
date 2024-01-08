@@ -7,7 +7,7 @@ const mongoose=require('mongoose')
 
 
 // mongoDB connection
-mongoose.connect(process.env.DATA_BASE_URL)
+mongoose.connect("mongodb+srv://abbashasmi:Rizvi%409967@habbit-tracker.2hg7a7b.mongodb.net/?retryWrites=true&w=majority")
 
 
 
