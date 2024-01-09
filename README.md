@@ -7,7 +7,7 @@
  ```
 - Express.js
 + MongoDB
-+ EJS
+* EJS
 + javascript
 
 ```
