@@ -5,10 +5,10 @@
  
  ### tech stack used
  ```
-- Express.js
-+ MongoDB
-* EJS
-+ javascript
+ Express.js
+ MongoDB
+ EJS
+ javascript
 
 ```
  
