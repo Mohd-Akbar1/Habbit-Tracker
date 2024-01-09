@@ -1,3 +1,15 @@
- Habbit tracker app using Express.js ,mongoDB,Ejs
- project: https://habbit-tracker-8kth.onrender.com
+ # Habbit tracker  
+ __
+ ### project live
+ https://habbit-tracker-8kth.onrender.com
+ 
+ ### tech stack used
+ ```
++ Express.js
++ MongoDB
++ EJS
++ javascript
++
+```
+ 
  
