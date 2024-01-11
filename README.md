@@ -11,6 +11,11 @@
  javascript
 
 ```
+## how to use in localsetup
++ clone the project
++ run npm init
++ run command node index.js
++ project will run on 8000 port
 
 ## Features
 
