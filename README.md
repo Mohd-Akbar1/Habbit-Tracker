@@ -36,5 +36,11 @@
 + Incomplete will be shown in red
 + Complete will be show in blue
 + Not marked means None will be in black
- 
+
+ # home Screen
+ ![habbithome](https://github.com/Mohd-Akbar1/Imdb-Clone/assets/146831190/a570fb9e-7bae-438c-a3d4-bd5428ba9aa8)
+
+# Detail Page
+![habbit detail](https://github.com/Mohd-Akbar1/Imdb-Clone/assets/146831190/d9768b45-60df-41b8-b720-f80738595bfe)
+
  
